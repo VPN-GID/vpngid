@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- DNS prefetch for Google Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <title>Статьи о VPN - Полезная информация и руководства | VPN GID</title>
+    <meta name="description" content="Полезные статьи о VPN: что такое VPN, как выбрать лучший сервис, безопасность бесплатных VPN и другие важные вопросы. Экспертные руководства и советы.">
+    <meta name="keywords" content="статьи VPN, что такое VPN, выбор VPN, безопасность VPN, руководства VPN, VPN советы">
+    <meta name="author" content="VPN GID">
+    <meta name="robots" content="index, follow, max-snippet:160, max-image-preview:large">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/css/main.css?v=2025-08-24-mobile" as="style">
+    <link rel="preload" href="/js/main.js" as="script">
+    <link rel="preload" href="/img/logo.svg" as="image">
+    <link rel="preload" href="/img/hero-bg.jpg" as="image" fetchpriority="high">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Favicon -->
+    <!-- Favicon для всех поисковых систем -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/favicon-180x180.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- Мета-теги для поисковых систем -->
+    <meta name="msapplication-TileColor" content="#38B2AC">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.css?v=2025-08-24-mobile">
+    
+    <!-- Canonical and hreflang -->
+    <link rel="canonical" href="https://vpngid.com/articles/">
+    <link rel="alternate" hreflang="ru" href="https://vpngid.com/articles/">
+    <link rel="alternate" hreflang="en" href="https://vpngid.com/en/articles/">
+    <link rel="alternate" hreflang="x-default" href="https://vpngid.com/en/articles/">
+    
+    <!-- Additional page styles -->
+    <style>
+        .metrika-pixel {
+            position: absolute;
+            left: -9999px;
+        }
+        
+        /* Article Card Enhancements */
+        .article-image {
+            position: relative;
+        }
+        
+        .article-category {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: var(--accent-primary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-light);
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+        
+        /* Categories Section */
+        .categories-section {
+            padding: 4rem 0;
+            background: var(--bg-primary);
+        }
+        
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .category-card {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow-medium);
+            transition: all 0.3s ease;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-large);
+        }
+        
+        .category-icon {
+            color: var(--accent-primary);
+            margin-bottom: 1rem;
+        }
+        
+        .category-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .category-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        /* Newsletter Section */
+        .newsletter-section {
+            padding: 4rem 0;
+        }
+        
+        .newsletter-card {
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-hover));
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 16px;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .newsletter-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .newsletter-description {
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            gap: 1rem;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .newsletter-input {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            background: white;
+            color: var(--text-primary);
+        }
+        
+        .newsletter-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+        }
+        
+        .newsletter-button {
+            padding: 1rem 2rem;
+            background: white;
+            color: var(--accent-primary);
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .newsletter-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .newsletter-form {
+                flex-direction: column;
+            }
+            
+            .newsletter-card {
+                padding: 2rem 1.5rem;
+            }
+            
+            .newsletter-title {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Статьи о VPN - Полезная информация и руководства">
+    <meta property="og:description" content="Полезные статьи о VPN: что такое VPN, как выбрать лучший сервис, безопасность бесплатных VPN">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vpngid.com/articles/">
+    <meta property="og:image" content="https://vpngid.com/img/articles/article-hero.jpg">
+    <meta property="og:image:width" content="900">
+    <meta property="og:image:height" content="500">
+    <meta property="og:image:alt" content="VPN статьи - полезные руководства и экспертные советы по VPN технологиям">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:locale:alternate" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Статьи о VPN - Полезная информация и руководства">
+    <meta name="twitter:description" content="Полезные статьи о VPN: что такое VPN, как выбрать лучший сервис, безопасность бесплатных VPN">
+    <meta name="twitter:image" content="https://vpngid.com/img/articles/article-hero.jpg">
+    <meta name="twitter:image:alt" content="VPN статьи - полезные руководства и экспертные советы по VPN технологиям">
+    
+    <!-- Yandex.Metrika counter -->
+    <script>
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();
+       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(100793316, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+       });
+    </script>
+    <!-- /Yandex.Metrika counter -->
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "VPN GID - Статьи и руководства по VPN",
+        "description": "Полная коллекция статей о VPN: руководства, обзоры, советы по безопасности и выбору VPN сервисов",
+        "url": "https://vpngid.com/articles/",
+        "inLanguage": "ru",
+        "datePublished": "2025-01-15T10:00:00+03:00",
+        "dateModified": "2025-08-27T12:00:00+03:00",
+        "publisher": {
+            "@type": "Organization",
+            "name": "VPN GID",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://vpngid.com/img/logo.svg",
+                "width": 40,
+                "height": 40
+            }
+        },
+        "mainEntity": {
+            "@type": "ItemList",
+            "numberOfItems": 3,
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "url": "https://vpngid.com/articles/what-is-vpn",
+                    "name": "Что такое VPN и зачем он нужен"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "url": "https://vpngid.com/articles/how-to-choose-vpn",
+                    "name": "Как выбрать VPN сервис"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "url": "https://vpngid.com/articles/are-free-vpn-safe",
+                    "name": "Безопасны ли бесплатные VPN"
+                }
+            ]
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Yandex.Metrika noscript -->
+    <noscript><img src="https://mc.yandex.ru/watch/100793316" class="metrika-pixel" alt=""></noscript>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <img src="/img/logo.svg" alt="VPN GID логотип" class="logo-img" width="40" height="40" loading="lazy">
+                    <span class="logo-text" data-ru="VPN GID" data-en="VPN GID">VPN GID</span>
+                </a>
+                
+                <nav class="nav">
+                    <div class="nav-menu">
+                        <a href="/" class="nav-link" data-ru="Главная" data-en="Home">Главная</a>
+                        <a href="/best-vpn" class="nav-link" data-ru="Лучшие VPN" data-en="Best VPN">Лучшие VPN</a>
+                        <a href="/coupons" class="nav-link" data-ru="Купоны" data-en="Coupons">Купоны</a>
+                        <a href="/articles/" class="nav-link active" data-ru="Статьи" data-en="Articles">Статьи</a>
+                    </div>
+                    
+                    <div class="header-controls">
+                        <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                            <svg class="theme-icon sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                            <svg class="theme-icon moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                        </button>
+                        
+                        <div class="lang-toggle">
+                            <button class="lang-btn active" data-lang="ru">RU</button>
+                            <button class="lang-btn" data-lang="en">EN</button>
+                        </div>
+                    </div>
+                    
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title" data-ru="Статьи о VPN" data-en="VPN Articles">
+                        Статьи о VPN
+                    </h1>
+                    <p class="hero-subtitle" data-ru="Полезные руководства, экспертные советы и подробные объяснения всего, что касается VPN-технологий. Изучите основы и продвинутые техники для максимальной безопасности в интернете." data-en="Useful guides, expert advice and detailed explanations of everything related to VPN technologies. Learn the basics and advanced techniques for maximum internet security.">
+                        Полезные руководства, экспертные советы и подробные объяснения всего, что касается VPN-технологий. Изучите основы и продвинутые техники для максимальной безопасности в интернете.
+                    </p>
+                </div>
+                <div class="hero-image">
+                    <picture>
+                        <source srcset="/img/articles/article-hero.jpg" type="image/jpeg">
+                        <img src="/img/articles/article-hero.jpg" 
+                             srcset="/img/responsive/article-hero-320w.jpg 320w, 
+                                     /img/responsive/article-hero-480w.jpg 480w, 
+                                     /img/responsive/article-hero-600w.jpg 600w" 
+                             sizes="(max-width: 768px) calc(100vw - 2rem), (max-width: 1280px) calc(50vw - 2rem), 600px" 
+                             alt="VPN статьи - полезные руководства и экспертные советы по VPN технологиям" 
+                             class="hero-img" width="600" height="400" style="max-width: 100%; height: auto;" loading="eager" decoding="async">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles Section -->
+        <section class="articles-section" aria-labelledby="articles-title">
+            <div class="container">
+                <h2 id="articles-title" class="section-title" data-ru="Все статьи о VPN" data-en="All VPN Articles">
+                    Все статьи о VPN
+                </h2>
+                <div class="articles-grid">
+                    <!-- Article 1: What is VPN -->
+                    <article class="article-card">
+                        <div class="article-image">
+                            <picture>
+                                <source srcset="/img/articles/vpn-guide.jpg" type="image/jpeg">
+                                <img src="/img/articles/vpn-guide.jpg" 
+                                     srcset="/img/responsive/vpn-guide-180w.jpg 180w, 
+                                             /img/responsive/vpn-guide-240w.jpg 240w, 
+                                             /img/responsive/vpn-guide-300w.jpg 300w" 
+                                     sizes="(max-width: 320px) 180px, (max-width: 480px) 240px, 300px" 
+                                     alt="Руководство по VPN - что такое VPN, принцип работы и преимущества" 
+                                     class="article-img" width="300" height="200" style="max-width: 100%; height: auto;" loading="lazy" decoding="async">
+                            </picture>
+                            <div class="article-category" data-ru="Основы" data-en="Basics">Основы</div>
+                        </div>
+                        <div class="article-content">
+                            <h2 class="article-title">
+                                <a href="/articles/what-is-vpn" data-ru="Что такое VPN и зачем он вам нужен?" data-en="What Is a VPN and Why Do You Need One?">
+                                    Что такое VPN и зачем он вам нужен?
+                                </a>
+                            </h2>
+                            <p class="article-excerpt" data-ru="Полное руководство для начинающих о том, что такое VPN, как он работает и почему каждому нужна защита в интернете. Разбираем принципы работы, преимущества и основные функции." data-en="A complete beginner's guide to what VPN is, how it works and why everyone needs internet protection. We analyze the principles of operation, advantages and main functions.">
+                                Полное руководство для начинающих о том, что такое VPN, как он работает и почему каждому нужна защита в интернете. Разбираем принципы работы, преимущества и основные функции.
+                            </p>
+                            <div class="article-meta">
+                                <span class="article-date" data-ru="15 января 2025" data-en="January 15, 2025">15 января 2025</span>
+                                <span class="article-read-time" data-ru="7 мин чтения" data-en="7 min read">7 мин чтения</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 2: How to Choose VPN -->
+                    <article class="article-card">
+                        <div class="article-image">
+                            <picture>
+                                <source srcset="/img/articles/vpn-choice.jpg" type="image/jpeg">
+                                <img src="/img/articles/vpn-choice.jpg" 
+                                     srcset="/img/responsive/vpn-choice-180w.jpg 180w, 
+                                             /img/responsive/vpn-choice-240w.jpg 240w, 
+                                             /img/responsive/vpn-choice-300w.jpg 300w" 
+                                     sizes="(max-width: 320px) 180px, (max-width: 480px) 240px, 300px" 
+                                     alt="Выбор VPN - критерии выбора лучшего VPN сервиса для безопасности" 
+                                     class="article-img" width="300" height="200" style="max-width: 100%; height: auto;" loading="lazy" decoding="async">
+                            </picture>
+                            <div class="article-category" data-ru="Выбор" data-en="Selection">Выбор</div>
+                        </div>
+                        <div class="article-content">
+                            <h2 class="article-title">
+                                <a href="/articles/how-to-choose-vpn" data-ru="Как выбрать лучший VPN в 2025 году?" data-en="How to Choose the Best VPN in 2025?">
+                                    Как выбрать лучший VPN в 2025 году?
+                                </a>
+                            </h2>
+                            <p class="article-excerpt" data-ru="Ключевые критерии выбора VPN-сервиса: безопасность, скорость, цена, юрисдикция и другие важные факторы. Практические советы от экспертов по кибербезопасности." data-en="Key criteria for choosing a VPN service: security, speed, price, jurisdiction and other important factors. Practical advice from cybersecurity experts.">
+                                Ключевые критерии выбора VPN-сервиса: безопасность, скорость, цена, юрисдикция и другие важные факторы. Практические советы от экспертов по кибербезопасности.
+                            </p>
+                            <div class="article-meta">
+                                <span class="article-date" data-ru="10 января 2025" data-en="January 10, 2025">10 января 2025</span>
+                                <span class="article-read-time" data-ru="12 мин чтения" data-en="12 min read">12 мин чтения</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 3: Are Free VPNs Safe -->
+                    <article class="article-card">
+                        <div class="article-image">
+                            <picture>
+                                <source srcset="/img/articles/vpn-security.jpg" type="image/jpeg">
+                                <img src="/img/articles/vpn-security.jpg" 
+                                     srcset="/img/responsive/vpn-security-180w.jpg 180w, 
+                                             /img/responsive/vpn-security-240w.jpg 240w, 
+                                             /img/responsive/vpn-security-300w.jpg 300w" 
+                                     sizes="(max-width: 320px) 180px, (max-width: 480px) 240px, 300px" 
+                                     alt="Безопасность бесплатных VPN - риски и угрозы бесплатных VPN сервисов" 
+                                     class="article-img" width="300" height="200" style="max-width: 100%; height: auto;" loading="lazy" decoding="async">
+                            </picture>
+                            <div class="article-category" data-ru="Безопасность" data-en="Security">Безопасность</div>
+                        </div>
+                        <div class="article-content">
+                            <h2 class="article-title">
+                                <a href="/articles/are-free-vpn-safe" data-ru="Безопасны ли бесплатные VPN?" data-en="Are Free VPNs Safe?">
+                                    Безопасны ли бесплатные VPN?
+                                </a>
+                            </h2>
+                            <p class="article-excerpt" data-ru="Разбираем мифы и реальные риски использования бесплатных VPN-сервисов. Что скрывают провайдеры и как защитить свои данные при использовании бесплатных решений." data-en="Debunking myths and real risks of using free VPN services. What providers hide and how to protect your data when using free solutions.">
+                                Разбираем мифы и реальные риски использования бесплатных VPN-сервисов. Что скрывают провайдеры и как защитить свои данные при использовании бесплатных решений.
+                            </p>
+                            <div class="article-meta">
+                                <span class="article-date" data-ru="5 января 2025" data-en="January 5, 2025">5 января 2025</span>
+                                <span class="article-read-time" data-ru="9 мин чтения" data-en="9 min read">9 мин чтения</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Categories Section -->
+                <section class="categories-section">
+                    <div class="container">
+                        <h2 class="section-title" data-ru="Категории статей" data-en="Article Categories">
+                            Категории статей
+                        </h2>
+                        <div class="categories-grid">
+                            <div class="category-card">
+                                <div class="category-icon">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="m9 12 2 2 4-4"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="category-title" data-ru="Основы VPN" data-en="VPN Basics">Основы VPN</h3>
+                                <p class="category-description" data-ru="Изучите базовые концепции и принципы работы VPN-технологий" data-en="Learn basic concepts and principles of VPN technologies">
+                                    Изучите базовые концепции и принципы работы VPN-технологий
+                                </p>
+                            </div>
+                            
+                            <div class="category-card">
+                                <div class="category-icon">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="m5 15-3-3 3-3"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="category-title" data-ru="Выбор и сравнение" data-en="Selection & Comparison">Выбор и сравнение</h3>
+                                <p class="category-description" data-ru="Руководства по выбору подходящего VPN-сервиса для ваших задач" data-en="Guides for choosing the right VPN service for your needs">
+                                    Руководства по выбору подходящего VPN-сервиса для ваших задач
+                                </p>
+                            </div>
+                            
+                            <div class="category-card">
+                                <div class="category-icon">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <circle cx="12" cy="16" r="1"></circle>
+                                        <path d="m7 11 V7a5 5 0 0 1 10 0v4"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="category-title" data-ru="Безопасность" data-en="Security">Безопасность</h3>
+                                <p class="category-description" data-ru="Важные аспекты защиты и приватности при использовании VPN" data-en="Important aspects of protection and privacy when using VPN">
+                                    Важные аспекты защиты и приватности при использовании VPN
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Useful Resources Section -->
+                <section class="resources-section">
+                    <div class="container">
+                        <h2 class="section-title" data-ru="Полезные ресурсы" data-en="Useful Resources">
+                            Полезные ресурсы
+                        </h2>
+                        <div class="resources-grid">
+                            <div class="resource-card">
+                                <div class="resource-icon">🔧</div>
+                                <h3 class="resource-title" data-ru="Инструменты проверки VPN" data-en="VPN Testing Tools">Инструменты проверки VPN</h3>
+                                <p class="resource-description" data-ru="Бесплатные онлайн-сервисы для проверки работы вашего VPN, тестирования скорости и выявления утечек IP-адреса." data-en="Free online services to check your VPN performance, test speed and detect IP leaks.">
+                                    Бесплатные онлайн-сервисы для проверки работы вашего VPN, тестирования скорости и выявления утечек IP-адреса.
+                                </p>
+                                <ul class="resource-links">
+                                    <li><a href="https://whatismyipaddress.com/" target="_blank" rel="noopener noreferrer">What Is My IP Address</a></li>
+                                    <li><a href="https://ipleak.net/" target="_blank" rel="noopener noreferrer">IP Leak Test</a></li>
+                                    <li><a href="https://www.speedtest.net/" target="_blank" rel="noopener noreferrer">Speedtest by Ookla</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="resource-card">
+                                <div class="resource-icon">📚</div>
+                                <h3 class="resource-title" data-ru="Дополнительное чтение" data-en="Further Reading">Дополнительное чтение</h3>
+                                <p class="resource-description" data-ru="Углубленные материалы о VPN-технологиях, протоколах шифрования и вопросах приватности в интернете." data-en="In-depth materials about VPN technologies, encryption protocols and internet privacy issues.">
+                                    Углубленные материалы о VPN-технологиях, протоколах шифрования и вопросах приватности в интернете.
+                                </p>
+                                <ul class="resource-links">
+                                    <li><a href="/articles/what-is-vpn" data-ru="Что такое VPN?" data-en="What is VPN?">Что такое VPN?</a></li>
+                                    <li><a href="/articles/how-to-choose-vpn" data-ru="Как выбрать VPN?" data-en="How to choose VPN?">Как выбрать VPN?</a></li>
+                                    <li><a href="/articles/are-free-vpn-safe" data-ru="Безопасность бесплатных VPN" data-en="Free VPN safety">Безопасность бесплатных VPN</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="resource-card">
+                                <div class="resource-icon">🎯</div>
+                                <h3 class="resource-title" data-ru="Быстрый выбор VPN" data-en="Quick VPN Selection">Быстрый выбор VPN</h3>
+                                <p class="resource-description" data-ru="Персональные рекомендации VPN-сервисов в зависимости от ваших потребностей и бюджета." data-en="Personal VPN service recommendations based on your needs and budget.">
+                                    Персональные рекомендации VPN-сервисов в зависимости от ваших потребностей и бюджета.
+                                </p>
+                                <ul class="resource-links">
+                                    <li><a href="/best-vpn" data-ru="Сравнение лучших VPN" data-en="Best VPN comparison">Сравнение лучших VPN</a></li>
+                                    <li><a href="/coupons" data-ru="Актуальные скидки" data-en="Current discounts">Актуальные скидки</a></li>
+                                    <li><a href="/best-vpn#budget" data-ru="Бюджетные варианты" data-en="Budget options">Бюджетные варианты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <img src="/img/logo.svg" alt="VPN GID логотип" class="footer-logo-img" width="32" height="32" loading="lazy">
+                        <span class="footer-logo-text">VPN GID</span>
+                    </div>
+                    <p class="footer-description" data-ru="Ваш независимый гид в мире VPN-сервисов. Честные обзоры, актуальные сравнения и эксклюзивные предложения." data-en="Your independent guide to VPN services. Honest reviews, current comparisons and exclusive offers.">
+                        Ваш независимый гид в мире VPN-сервисов. Честные обзоры, актуальные сравнения и эксклюзивные предложения.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4 class="footer-title" data-ru="Навигация" data-en="Navigation">Навигация</h4>
+                        <ul class="footer-list">
+                            <li><a href="/" data-ru="Главная" data-en="Home">Главная</a></li>
+                            <li><a href="/best-vpn" data-ru="Лучшие VPN" data-en="Best VPN">Лучшие VPN</a></li>
+                            <li><a href="/coupons" data-ru="Купоны" data-en="Coupons">Купоны</a></li>
+                            <li><a href="/articles/" data-ru="Статьи" data-en="Articles">Статьи</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 class="footer-title" data-ru="Контакты" data-en="Contact">Контакты</h4>
+                        <ul class="footer-list">
+                            <li><a href="mailto:vpngid@outlook.com">vpngid@outlook.com</a></li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="https://t.me/vpngid" class="social-link" aria-label="Telegram" target="_blank" rel="noopener noreferrer">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.youtube.com/@vpngid" class="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                            </a>
+                            <a href="https://instagram.com/vpngid" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright" data-ru="© 2025 VPN GID. Все права защищены." data-en="© 2025 VPN GID. All rights reserved.">
+                    © 2025 VPN GID. Все права защищены.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/js/main.js"></script>
+    
+    <!-- Schema.org Dynamic Loader for Enhanced SEO -->
+    <script src="/js/schema-loader.js"></script>
+    
+    
+    <script>
+        if (!document.querySelector("link[href*=\"fonts.googleapis.com\"]")) {
+            var fontEl = document.createElement("link");
+            fontEl.rel = "stylesheet";
+            fontEl.href = "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap";
+            fontEl.media = "print";
+            fontEl.onload = function() { this.media = "all"; };
+            document.head.appendChild(fontEl);
+            setTimeout(function() { 
+                if (fontEl.media !== "all") fontEl.media = "all"; 
+            }, 300);
+        }
+    </script>
+</body>
+</html>
