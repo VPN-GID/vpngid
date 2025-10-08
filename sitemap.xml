@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Russian Homepage -->
+  <url>
+    <loc>https://vpngid.com/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vpngid.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vpngid.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vpngid.com/en/" />
+    <lastmod>2025-09-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://vpngid.com/img/hero-bg.jpg</image:loc>
+      <image:caption>VPN безопасность - защита данных, анонимность и приватность в интернете</image:caption>
+      <image:title>VPN GID главная страница - безопасный интернет</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vpngid.com/img/logo.svg</image:loc>
+      <image:caption>VPN GID логотип - профессиональные VPN рекомендации и обзоры</image:caption>
+      <image:title>VPN GID лого - эксперт по VPN технологиям</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vpngid.com/img/features/shield.svg</image:loc>
+      <image:caption>Защита данных VPN - безопасность и шифрование интернет трафика</image:caption>
+      <image:title>VPN защита - иконка безопасности</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vpngid.com/img/features/globe.svg</image:loc>
+      <image:caption>Глобальный доступ через VPN - обход блокировок и географических ограничений</image:caption>
+      <image:title>VPN глобальный доступ - иконка мира</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vpngid.com/img/features/privacy.svg</image:loc>
+      <image:caption>Приватность в интернете - анонимность и защита личных данных через VPN</image:caption>
+      <image:title>VPN приватность - иконка конфиденциальности</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vpngid.com/img/features/speed.svg</image:loc>
+      <image:caption>Высокая скорость VPN - быстрое и стабильное интернет соединение</image:caption>
+      <image:title>VPN скорость - иконка быстрого подключения</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vpngid.com/img/articles/vpn-guide.jpg</image:loc>
+      <image:caption>Руководство по VPN - что такое VPN, принцип работы и преимущества</image:caption>
+      <image:title>VPN руководство - полное руководство пользователя</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vpngid.com/img/articles/vpn-choice.jpg</image:loc>
+      <image:caption>Выбор VPN - критерии выбора лучшего VPN сервиса для безопасности</image:caption>
+      <image:title>Как выбрать VPN - критерии и рекомендации</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vpngid.com/img/articles/vpn-security.jpg</image:loc>
+      <image:caption>Безопасность бесплатных VPN - риски и угрозы бесплатных VPN сервисов</image:caption>
+      <image:title>Безопасность VPN - анализ рисков бесплатных сервисов</image:title>
+    </image:image>
+  </url>
+  
+  <!-- English Homepage -->
+  <url>
+    <loc>https://vpngid.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vpngid.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vpngid.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vpngid.com/en/" />
+    <lastmod>2025-09-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://vpngid.com/img/hero-bg.jpg</image:loc>
+      <image:caption>VPN security - data protection, anonymity and privacy on the internet</image:caption>
+      <image:title>VPN GID English homepage - secure internet</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vpngid.com/img/logo.svg</image:loc>
+      <image:caption>VPN GID logo - professional VPN recommendations and reviews</image:caption>
+      <image:title>VPN GID logo - VPN technology expert</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vpngid.com/img/features/shield.svg</image:loc>
+      <image:caption>VPN data protection - security and encryption of internet traffic</image:caption>
+      <image:title>VPN protection - security icon</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vpngid.com/img/features/globe.svg</image:loc>
+      <image:caption>Global access via VPN - bypass blocks and geographical restrictions</image:caption>
+      <image:title>VPN global access - world icon</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vpngid.com/img/features/privacy.svg</image:loc>
+      <image:caption>Internet privacy - anonymity and personal data protection via VPN</image:caption>
+      <image:title>VPN privacy - confidentiality icon</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vpngid.com/img/features/speed.svg</image:loc>
+      <image:caption>High VPN speed - fast and stable internet connection</image:caption>
+      <image:title>VPN speed - fast connection icon</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Russian Best VPN Page -->
+  <url>
+    <loc>https://vpngid.com/best-vpn</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vpngid.com/best-vpn" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vpngid.com/en/best-vpn" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vpngid.com/en/best-vpn" />
+    <lastmod>2025-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://vpngid.com/img/best-vpn-hero.jpg</image:loc>
+      <image:caption>Лучшие VPN 2025 - независимые обзоры и сравнение топовых VPN сервисов</image:caption>
+      <image:title>Рейтинг лучших VPN сервисов 2025</image:title>
+    </image:image>
+  </url>
+  
+  <!-- English Best VPN Page -->
+  <url>
+    <loc>https://vpngid.com/en/best-vpn</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vpngid.com/best-vpn" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vpngid.com/en/best-vpn" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vpngid.com/en/best-vpn" />
+    <lastmod>2025-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://vpngid.com/img/best-vpn-hero.jpg</image:loc>
+      <image:caption>Best VPN 2025 - independent reviews and comparison of top VPN services</image:caption>
+      <image:title>Best VPN services ranking 2025</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Russian Coupons Page -->
+  <url>
+    <loc>https://vpngid.com/coupons</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vpngid.com/coupons" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vpngid.com/en/coupons" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vpngid.com/en/coupons" />
+    <lastmod>2025-09-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://vpngid.com/img/coupon-deals-hero.jpg</image:loc>
+      <image:caption>VPN купоны и скидки - эксклюзивные промокоды для экономии на VPN сервисах</image:caption>
+      <image:title>VPN купоны - экономия на VPN подписках</image:title>
+    </image:image>
+  </url>
+  
+  <!-- English Coupons Page -->
+  <url>
+    <loc>https://vpngid.com/en/coupons</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vpngid.com/coupons" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vpngid.com/en/coupons" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vpngid.com/en/coupons" />
+    <lastmod>2025-09-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://vpngid.com/img/coupon-deals-hero.jpg</image:loc>
+      <image:caption>VPN coupons and discounts - exclusive promo codes to save on VPN services</image:caption>
+      <image:title>VPN coupons - save on VPN subscriptions</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Russian Articles Index -->
+  <url>
+    <loc>https://vpngid.com/articles/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vpngid.com/articles/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vpngid.com/en/articles/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vpngid.com/en/articles/" />
+    <lastmod>2025-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://vpngid.com/img/articles/article-hero.jpg</image:loc>
+      <image:caption>VPN статьи - полезные руководства и экспертные советы по VPN технологиям</image:caption>
+      <image:title>VPN статьи - экспертные руководства и советы</image:title>
+    </image:image>
+  </url>
+  
+  <!-- English Articles Index -->
+  <url>
+    <loc>https://vpngid.com/en/articles/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vpngid.com/articles/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vpngid.com/en/articles/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vpngid.com/en/articles/" />
+    <lastmod>2025-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://vpngid.com/img/articles/article-hero.jpg</image:loc>
+      <image:caption>VPN articles - useful guides and expert advice on VPN technologies</image:caption>
+      <image:title>VPN articles - expert guides and advice</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Russian Articles -->
+  <url>
+    <loc>https://vpngid.com/articles/what-is-vpn</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vpngid.com/en/articles/what-is-vpn" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vpngid.com/en/articles/what-is-vpn" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vpngid.com/articles/what-is-vpn" />
+    <lastmod>2025-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://vpngid.com/img/articles/vpn-guide.jpg</image:loc>
+      <image:caption>Что такое VPN - полное руководство по виртуальным частным сетям</image:caption>
+      <image:title>VPN руководство - основы и принципы работы</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://vpngid.com/articles/how-to-choose-vpn</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vpngid.com/en/articles/how-to-choose-vpn" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vpngid.com/en/articles/how-to-choose-vpn" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vpngid.com/articles/how-to-choose-vpn" />
+    <lastmod>2025-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://vpngid.com/img/articles/vpn-choice.jpg</image:loc>
+      <image:caption>Как выбрать VPN - критерии выбора лучшего VPN сервиса</image:caption>
+      <image:title>Выбор VPN - руководство по выбору сервиса</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://vpngid.com/articles/are-free-vpn-safe</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vpngid.com/en/articles/are-free-vpn-safe" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vpngid.com/en/articles/are-free-vpn-safe" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vpngid.com/articles/are-free-vpn-safe" />
+    <lastmod>2025-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://vpngid.com/img/articles/vpn-security.jpg</image:loc>
+      <image:caption>Безопасность бесплатных VPN - риски и угрозы бесплатных сервисов</image:caption>
+      <image:title>Бесплатные VPN - анализ безопасности и рисков</image:title>
+    </image:image>
+  </url>
+  
+  <!-- English Articles -->
+  <url>
+    <loc>https://vpngid.com/en/articles/what-is-vpn</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vpngid.com/en/articles/what-is-vpn" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vpngid.com/en/articles/what-is-vpn" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vpngid.com/articles/what-is-vpn" />
+    <lastmod>2025-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://vpngid.com/img/articles/vpn-guide.jpg</image:loc>
+      <image:caption>What is VPN - complete guide to virtual private networks and their benefits</image:caption>
+      <image:title>VPN guide - basics and working principles</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://vpngid.com/en/articles/how-to-choose-vpn</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vpngid.com/en/articles/how-to-choose-vpn" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vpngid.com/en/articles/how-to-choose-vpn" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vpngid.com/articles/how-to-choose-vpn" />
+    <lastmod>2025-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://vpngid.com/img/articles/vpn-choice.jpg</image:loc>
+      <image:caption>How to choose VPN - criteria for selecting the best VPN service</image:caption>
+      <image:title>Choose VPN - service selection guide</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://vpngid.com/en/articles/are-free-vpn-safe</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vpngid.com/en/articles/are-free-vpn-safe" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vpngid.com/en/articles/are-free-vpn-safe" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://vpngid.com/articles/are-free-vpn-safe" />
+    <lastmod>2025-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://vpngid.com/img/articles/vpn-security.jpg</image:loc>
+      <image:caption>Free VPN safety - risks and threats of free VPN services</image:caption>
+      <image:title>Free VPN - security analysis and risks</image:title>
+    </image:image>
+  </url>
+
+</urlset>

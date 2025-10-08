@@ -1,0 +1,114 @@
+# robots.txt для VPN GID - многоязычная SEO оптимизация  
+# Версия: 4.2 | Дата: 2025-09-29
+# Поддержка: Русский (/) и Английский (/en/)
+# Исправлено: добавлено явное разрешение .html для корректной работы редиректов
+
+# === ОСНОВНЫЕ ПРАВИЛА ДЛЯ ВСЕХ БОТОВ ===
+User-agent: *
+Allow: /
+Allow: /en/
+Allow: /*.css  
+Allow: /*.js
+Allow: /*.json
+Allow: /*.html
+Allow: /img/
+Allow: /articles/
+Allow: /en/articles/
+Allow: /schema/
+Allow: /schema/index.json
+Allow: /schema/locales/
+Allow: /schema/templates/
+Allow: /js/schema-loader.js
+Allow: /sitemap.xml
+
+# === ЗАПРЕЩЕННЫЕ ДИРЕКТОРИИ ===
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /.env
+Disallow: /.env.local
+Disallow: /.env.production
+
+# === БЛОКИРОВКА ДУБЛИРОВАННОГО КОНТЕНТА ===
+# Блокируем только трекинговые параметры в query string (?)
+Disallow: /*?*utm_*
+Disallow: /*?*ref=*
+Disallow: /*?*source=*
+Disallow: /*?*campaign=*
+Disallow: /*?*sessionid*
+Disallow: /*?*PHPSESSID*
+Disallow: /*?*fbclid*
+Disallow: /*?*gclid*
+Disallow: /*?*_ga*
+Disallow: /*?*_gid*
+
+# === НАСТРОЙКА СКОРОСТИ СКАНИРОВАНИЯ ===
+User-agent: Googlebot
+Crawl-delay: 0
+
+User-agent: Yandex
+Crawl-delay: 1
+
+User-agent: Bingbot
+Crawl-delay: 1
+
+# === БЛОКИРОВКА ВРЕДОНОСНЫХ БОТОВ ===
+# Оставляем полезные боты для SEO анализа
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: SemrushBot
+Crawl-delay: 5
+
+User-agent: AhrefsBot
+Crawl-delay: 5
+
+# === НАСТРОЙКИ ДЛЯ YANDEX ===
+# Host директива удалена для современной SEO практики
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&utm_id&fbclid&gclid&msclkid&ref&source&sessionid&PHPSESSID&_ga&_gid&_gac&_gtag
+
+# === ДОПОЛНИТЕЛЬНЫЕ НАСТРОЙКИ ДЛЯ SEO ===
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Slackbot-LinkExpanding
+Allow: /
+
+# === КАРТА САЙТА ===
+Sitemap: https://vpngid.com/sitemap.xml
+
+# === ДОПОЛНИТЕЛЬНЫЕ РАЗРЕШЕНИЯ ДЛЯ GOOGLE ===
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# === ДОПОЛНИТЕЛЬНЫЕ ДИРЕКТИВЫ ДЛЯ SEO ===
+# Разрешаем индексацию важных ресурсов
+Allow: /robots.txt
+Allow: /favicon.ico
+Allow: /.well-known/
