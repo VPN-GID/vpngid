@@ -1,0 +1,149 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "{{ARTICLE_TITLE}}",
+  "description": "{{ARTICLE_DESCRIPTION}}",
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ARTICLE_IMAGE}}",
+    "width": 600,
+    "height": 400
+  },
+  "datePublished": "{{PUBLISH_DATE}}",
+  "dateModified": "{{MODIFIED_DATE}}",
+  "author": {
+    "@type": "Organization",
+    "@id": "https://vpngid.com/#organization",
+    "name": "VPN GID",
+    "url": "https://vpngid.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://vpngid.com/#organization",
+    "name": "VPN GID",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://vpngid.com/img/logo.svg",
+      "width": 40,
+      "height": 40
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ARTICLE_URL}}"
+  },
+  "articleSection": "{{ARTICLE_SECTION}}",
+  "wordCount": "{{WORD_COUNT}}",
+  "inLanguage": "{{LANGUAGE}}",
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "VPN",
+      "description": "Virtual Private Network technology",
+      "sameAs": "https://en.wikipedia.org/wiki/Virtual_private_network"
+    },
+    {
+      "@type": "Thing", 
+      "name": "Internet Security",
+      "description": "Online safety and privacy protection",
+      "sameAs": "https://en.wikipedia.org/wiki/Internet_security"
+    },
+    {
+      "@type": "Thing",
+      "name": "Online Privacy",
+      "description": "Digital privacy and anonymity",
+      "sameAs": "https://en.wikipedia.org/wiki/Internet_privacy"
+    },
+    {
+      "@type": "Thing",
+      "name": "Cybersecurity",
+      "description": "Protection against digital attacks",
+      "sameAs": "https://en.wikipedia.org/wiki/Computer_security"
+    },
+    {
+      "@type": "Thing",
+      "name": "Encryption",
+      "description": "Data protection through cryptographic methods",
+      "sameAs": "https://en.wikipedia.org/wiki/Encryption"
+    }
+  ],
+  "keywords": [
+    "VPN",
+    "Virtual Private Network", 
+    "Internet Security",
+    "Online Privacy",
+    "Cybersecurity",
+    "Encryption",
+    "Data Protection",
+    "Digital Privacy",
+    "Network Security",
+    "Anonymous Browsing"
+  ],
+  "mentions": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "AdGuard VPN",
+      "applicationCategory": "VPN Software"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "CyberGhost VPN",
+      "applicationCategory": "VPN Software"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "HideMyName VPN",
+      "applicationCategory": "VPN Software"
+    }
+  ],
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Главная",
+        "item": "https://vpngid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Статьи",
+        "item": "https://vpngid.com/articles/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "{{ARTICLE_TITLE}}",
+        "item": "{{ARTICLE_URL}}"
+      }
+    ]
+  },
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "xpath": ["/html/head/title", "//*[@class='headline']", "//*[@class='summary']"]
+  },
+  "isAccessibleForFree": true,
+  "hasPart": [
+    {
+      "@type": "WebPageElement",
+      "cssSelector": ".article-introduction",
+      "name": "Introduction"
+    },
+    {
+      "@type": "WebPageElement", 
+      "cssSelector": ".article-main-content",
+      "name": "Main Content"
+    },
+    {
+      "@type": "WebPageElement",
+      "cssSelector": ".article-conclusion",
+      "name": "Conclusion"
+    }
+  ],
+  "reviewedBy": {
+    "@type": "Organization",
+    "@id": "https://vpngid.com/#organization"
+  },
+  "timeRequired": "PT10M"
+}

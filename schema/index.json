@@ -1,0 +1,47 @@
+{
+  "name": "VPN GID Schema.org System",
+  "version": "1.0.0",
+  "description": "Structured data system for enhanced SEO optimization",
+  "created": "2025-08-23",
+  "structure": {
+    "locales/": {
+      "description": "Language-specific schema files",
+      "files": [
+        "schema-ru.json - Russian main schema",
+        "schema-en.json - English main schema"
+      ]
+    },
+    "templates/": {
+      "description": "Dynamic schema templates",
+      "files": [
+        "article.json - TechArticle schema template with SEO optimization",
+        "review.json - VPN review schema template with enhanced features", 
+        "coupons.json - OfferCatalog schema template for discounts"
+      ]
+    }
+  },
+  "usage": {
+    "automatic": "Use /js/schema-loader.js for dynamic loading",
+    "manual": "Include specific schema files in HTML pages",
+    "api": "Access schemas via /schema/ endpoints"
+  },
+  "supported_types": [
+    "Organization",
+    "WebSite", 
+    "TechArticle",
+    "Review",
+    "ItemList",
+    "OfferCatalog",
+    "BreadcrumbList",
+    "ImageGallery",
+    "CollectionPage",
+    "SoftwareApplication",
+    "Rating",
+    "AggregateRating",
+    "Offer",
+    "Brand",
+    "ContactPoint",
+    "WebPageElement",
+    "SpeakableSpecification"
+  ]
+}

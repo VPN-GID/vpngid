@@ -1,0 +1,112 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "SoftwareApplication",
+    "name": "{{VPN_NAME}}",
+    "applicationCategory": "VPN Software",
+    "operatingSystem": "{{OPERATING_SYSTEMS}}",
+    "url": "{{VPN_WEBSITE}}",
+    "description": "{{VPN_DESCRIPTION}}",
+    "offers": {
+      "@type": "Offer",
+      "price": "{{PRICE}}",
+      "priceCurrency": "USD",
+      "priceValidUntil": "2025-12-31",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "{{VPN_NAME}}"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "{{RATING_VALUE}}",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "{{RATING_COUNT}}"
+    },
+    "featureList": [
+      "Military-grade AES-256 encryption",
+      "Strict no-logs policy", 
+      "Kill Switch protection",
+      "Geo-blocking bypass",
+      "Multiple VPN protocols",
+      "24/7 customer support",
+      "DNS leak protection",
+      "Split tunneling",
+      "Multi-device support",
+      "Fast server network"
+    ]
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "{{REVIEW_RATING}}",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "author": {
+    "@type": "Organization",
+    "@id": "https://vpngid.com/#organization",
+    "name": "VPN GID"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://vpngid.com/#organization",
+    "name": "VPN GID"
+  },
+  "datePublished": "{{PUBLISH_DATE}}",
+  "reviewBody": "{{REVIEW_TEXT}}",
+  "positiveNotes": [
+    "{{POSITIVE_1}}",
+    "{{POSITIVE_2}}",
+    "{{POSITIVE_3}}"
+  ],
+  "negativeNotes": [
+    "{{NEGATIVE_1}}",
+    "{{NEGATIVE_2}}"
+  ],
+  "keywords": [
+    "{{VPN_NAME}} review",
+    "VPN service test",
+    "VPN security analysis",
+    "VPN speed test",
+    "Best VPN 2025",
+    "VPN comparison",
+    "Online privacy",
+    "Internet security"
+  ],
+  "pros": "{{POSITIVE_1}}, {{POSITIVE_2}}, {{POSITIVE_3}}",
+  "cons": "{{NEGATIVE_1}}, {{NEGATIVE_2}}",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Главная",
+        "item": "https://vpngid.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Обзоры VPN",
+        "item": "https://vpngid.com/best-vpn"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "{{VPN_NAME}} Обзор",
+        "item": "https://vpngid.com/best-vpn"
+      }
+    ]
+  },
+  "mainEntity": {
+    "@type": "Question",
+    "name": "Какой рейтинг у {{VPN_NAME}}?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "{{VPN_NAME}} получил рейтинг {{REVIEW_RATING}} из 5 звезд в нашем независимом тестировании. {{REVIEW_TEXT}}"
+    }
+  }
+}

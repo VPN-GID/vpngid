@@ -1,0 +1,531 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://vpngid.com/#organization",
+      "name": "VPN GID",
+      "alternateName": ["VPN Guide", "ВПН ГИД"],
+      "url": "https://vpngid.com/en/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://vpngid.com/img/logo.svg",
+        "width": 40,
+        "height": 40,
+        "contentUrl": "https://vpngid.com/img/logo.svg"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://vpngid.com/img/hero-bg.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "description": "Independent reviews of the best VPN services of 2025. Expert tests, comparisons and exclusive discounts up to 85%.",
+      "foundingDate": "2024",
+      "areaServed": ["US", "UK", "CA", "AU", "Global"],
+      "knowsLanguage": ["en", "ru"],
+      "expertise": [
+        "VPN technology",
+        "Internet security", 
+        "Online privacy",
+        "VPN service reviews",
+        "VPN provider comparisons",
+        "Cybersecurity analysis",
+        "Privacy protection guidance",
+        "VPN speed testing",
+        "Encryption protocol analysis",
+        "Geo-blocking bypass methods",
+        "DNS leak protection",
+        "Kill Switch technology",
+        "Split Tunneling configuration",
+        "Multi-platform compatibility"
+      ],
+      "sameAs": [
+        "https://vpngid.com/en/",
+        "https://vpngid.com/",
+        "https://t.me/vpngid",
+        "https://www.youtube.com/@vpngid",
+        "https://instagram.com/vpngid"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "vpngid@outlook.com",
+        "areaServed": "Global",
+        "availableLanguage": ["English", "Russian"]
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "VPN GID",
+        "description": "Independent VPN technology expert"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://vpngid.com/en/#website",
+      "url": "https://vpngid.com/en/",
+      "name": "VPN GID - Your Guide to VPN World",
+      "description": "Independent reviews of the best VPN services of 2025. Compare prices, features and security. Exclusive discounts up to 85%.",
+      "publisher": {
+        "@id": "https://vpngid.com/#organization"
+      },
+      "inLanguage": ["en-US", "ru-RU"],
+      "copyrightYear": 2025,
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://vpngid.com/en/best-vpn?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      ],
+      "mainEntity": {
+        "@type": "ItemList",
+        "@id": "https://vpngid.com/en/#vpnlist",
+        "name": "Best VPNs 2025",
+        "description": "Top-rated VPN services ranked by VPN GID experts",
+        "numberOfItems": 6,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "AdGuard VPN",
+              "applicationCategory": "VPN Software",
+              "operatingSystem": ["Windows", "macOS", "iOS", "Android", "Linux"],
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "USD",
+                "price": "2.99",
+                "priceValidUntil": "2025-12-31",
+                "availability": "https://schema.org/InStock"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "bestRating": "5",
+                "worstRating": "1",
+                "ratingCount": "150"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "HideMyName VPN",
+              "applicationCategory": "VPN Software",
+              "operatingSystem": ["Windows", "macOS", "iOS", "Android"],
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "USD",
+                "price": "4.99",
+                "priceValidUntil": "2025-12-31",
+                "availability": "https://schema.org/InStock"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.6",
+                "bestRating": "5",
+                "worstRating": "1",
+                "ratingCount": "120"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "CyberGhost VPN",
+              "applicationCategory": "VPN Software",
+              "operatingSystem": ["Windows", "macOS", "iOS", "Android", "Linux"],
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "USD",
+                "price": "2.11",
+                "priceValidUntil": "2025-12-31",
+                "availability": "https://schema.org/InStock"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.7",
+                "bestRating": "5",
+                "worstRating": "1",
+                "ratingCount": "200"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "ProtonVPN",
+              "applicationCategory": "VPN Software",
+              "operatingSystem": ["Windows", "macOS", "iOS", "Android", "Linux"],
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "USD",
+                "price": "4.99",
+                "priceValidUntil": "2025-12-31",
+                "availability": "https://schema.org/InStock"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.5",
+                "bestRating": "5",
+                "worstRating": "1",
+                "ratingCount": "180"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Ivacy VPN",
+              "applicationCategory": "VPN Software",
+              "operatingSystem": ["Windows", "macOS", "iOS", "Android"],
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "USD",
+                "price": "1.00",
+                "priceValidUntil": "2025-12-31",
+                "availability": "https://schema.org/InStock"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.3",
+                "bestRating": "5",
+                "worstRating": "1",
+                "ratingCount": "95"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "TurboVPN",
+              "applicationCategory": "VPN Software",
+              "operatingSystem": ["Windows", "macOS", "iOS", "Android"],
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "USD",
+                "price": "11.99",
+                "priceValidUntil": "2025-12-31",
+                "availability": "https://schema.org/InStock"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.2",
+                "bestRating": "5",
+                "worstRating": "1",
+                "ratingCount": "75"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://vpngid.com/en/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://vpngid.com/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Best VPNs",
+          "item": "https://vpngid.com/en/best-vpn"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Articles",
+          "item": "https://vpngid.com/en/articles/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Coupons",
+          "item": "https://vpngid.com/en/coupons"
+        }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://vpngid.com/en/articles/#collection",
+      "name": "VPN Articles and Guides",
+      "description": "Helpful articles about VPN technology, internet security and privacy protection",
+      "url": "https://vpngid.com/en/articles/",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "VPN Articles",
+        "numberOfItems": 3,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "TechArticle",
+              "@id": "https://vpngid.com/en/articles/what-is-vpn",
+              "headline": "What is VPN and why do you need it?",
+              "description": "Complete guide explaining what VPN is and how virtual private network technology works",
+              "image": "https://vpngid.com/img/articles/vpn-guide.jpg",
+              "datePublished": "2025-08-23",
+              "dateModified": "2025-08-23",
+              "author": {
+                "@type": "Organization",
+                "@id": "https://vpngid.com/#organization"
+              },
+              "publisher": {
+                "@id": "https://vpngid.com/#organization"
+              },
+              "mainEntityOfPage": "https://vpngid.com/en/articles/what-is-vpn",
+              "articleSection": "VPN Basics",
+              "wordCount": 2500,
+              "inLanguage": "en-US"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "TechArticle",
+              "@id": "https://vpngid.com/en/articles/how-to-choose-vpn",
+              "headline": "How to Choose the Best VPN in 2025",
+              "description": "Comprehensive guide on selecting the perfect VPN service for security and privacy",
+              "image": "https://vpngid.com/img/articles/vpn-choice.jpg",
+              "datePublished": "2025-08-23",
+              "dateModified": "2025-08-23",
+              "author": {
+                "@type": "Organization",
+                "@id": "https://vpngid.com/#organization"
+              },
+              "publisher": {
+                "@id": "https://vpngid.com/#organization"
+              },
+              "mainEntityOfPage": "https://vpngid.com/en/articles/how-to-choose-vpn",
+              "articleSection": "VPN Selection",
+              "wordCount": 3000,
+              "inLanguage": "en-US"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "TechArticle",
+              "@id": "https://vpngid.com/en/articles/are-free-vpn-safe",
+              "headline": "Are Free VPNs Safe? The Truth About Free VPN Services",
+              "description": "Analysis of risks and threats of free VPN services - why you should choose paid solutions",
+              "image": "https://vpngid.com/img/articles/vpn-security.jpg",
+              "datePublished": "2025-08-23",
+              "dateModified": "2025-08-23",
+              "author": {
+                "@type": "Organization",
+                "@id": "https://vpngid.com/#organization"
+              },
+              "publisher": {
+                "@id": "https://vpngid.com/#organization"
+              },
+              "mainEntityOfPage": "https://vpngid.com/en/articles/are-free-vpn-safe",
+              "articleSection": "VPN Security",
+              "wordCount": 2800,
+              "inLanguage": "en-US"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "OfferCatalog",
+      "@id": "https://vpngid.com/en/coupons#offers",
+      "name": "VPN Coupons and Discounts",
+      "description": "Exclusive promo codes and discounts up to 85% on the best VPN services",
+      "url": "https://vpngid.com/en/coupons",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "AdGuard VPN Discount",
+          "description": "75% discount on AdGuard VPN two-year plan",
+          "price": "2.99",
+          "priceCurrency": "USD",
+          "priceValidUntil": "2025-12-31",
+          "availability": "https://schema.org/InStock",
+          "validThrough": "2025-12-31",
+          "itemOffered": {
+            "@type": "SoftwareApplication",
+            "name": "AdGuard VPN"
+          },
+          "discount": "75%",
+          "offeredBy": {
+            "@id": "https://vpngid.com/#organization"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "HideMyName VPN Promo",
+          "description": "70% discount on HideMyName VPN annual plan",
+          "price": "4.99",
+          "priceCurrency": "USD",
+          "priceValidUntil": "2025-12-31",
+          "availability": "https://schema.org/InStock",
+          "validThrough": "2025-12-31",
+          "itemOffered": {
+            "@type": "SoftwareApplication",
+            "name": "HideMyName VPN"
+          },
+          "discount": "70%",
+          "offeredBy": {
+            "@id": "https://vpngid.com/#organization"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "CyberGhost VPN Coupon",
+          "description": "85% discount on CyberGhost VPN three-year plan",
+          "price": "2.11",
+          "priceCurrency": "USD",
+          "priceValidUntil": "2025-12-31",
+          "availability": "https://schema.org/InStock",
+          "validThrough": "2025-12-31",
+          "itemOffered": {
+            "@type": "SoftwareApplication",
+            "name": "CyberGhost VPN"
+          },
+          "discount": "85%",
+          "offeredBy": {
+            "@id": "https://vpngid.com/#organization"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ImageGallery",
+      "@id": "https://vpngid.com/en/#gallery",
+      "name": "VPN GID Images",
+      "associatedMedia": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://vpngid.com/img/hero-bg.jpg",
+          "name": "VPN Security",
+          "description": "VPN security - data protection, anonymity and internet privacy",
+          "width": 1200,
+          "height": 630
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://vpngid.com/img/logo.svg",
+          "name": "VPN GID Logo",
+          "description": "VPN GID logo - professional VPN recommendations and reviews",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://vpngid.com/img/features/shield.svg",
+          "name": "VPN Protection",
+          "description": "VPN data protection - security and encryption of internet traffic",
+          "width": 64,
+          "height": 64
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://vpngid.com/img/features/globe.svg",
+          "name": "Global Access",
+          "description": "Global access via VPN - bypass blocks and geo-restrictions",
+          "width": 64,
+          "height": 64
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://vpngid.com/img/features/privacy.svg",
+          "name": "Privacy",
+          "description": "Internet privacy - anonymity and personal data protection via VPN",
+          "width": 64,
+          "height": 64
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://vpngid.com/img/features/speed.svg",
+          "name": "VPN Speed",
+          "description": "High VPN speed - fast and stable internet connection",
+          "width": 64,
+          "height": 64
+        }
+      ]
+    },
+    {
+      "@type": "Review",
+      "@id": "https://vpngid.com/en/best-vpn#review",
+      "itemReviewed": {
+        "@type": "SoftwareApplication",
+        "name": "AdGuard VPN",
+        "applicationCategory": "VPN Software"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.8",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "author": {
+        "@id": "https://vpngid.com/#organization"
+      },
+      "datePublished": "2025-08-23",
+      "reviewBody": "AdGuard VPN showed excellent results in our tests. High speed, reliable encryption and user-friendly applications make it one of the best VPNs on the market in 2025."
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://vpngid.com/en/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is VPN and why do I need it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "VPN (Virtual Private Network) is a technology that creates a secure and encrypted connection between your device and the internet. VPN is needed to protect privacy, bypass blocks, secure use of public Wi-Fi and access content blocked in your region."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which VPN is best to choose in 2025?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The best VPN depends on your needs. For maximum security we recommend AdGuard VPN or CyberGhost. For content access - HideMyName VPN. For budget option - Ivacy VPN. All these services are featured in our ranking with detailed reviews."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are free VPNs safe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most free VPNs are not safe. They may sell your data, show ads, have weak encryption or not encrypt traffic at all. We recommend using trusted paid VPN services with good reputation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How to get VPN discounts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In our coupons section you will find exclusive promo codes and discounts up to 85% on the best VPN services. Discounts are updated regularly and verified for relevance."
+          }
+        }
+      ]
+    }
+  ]
+}
