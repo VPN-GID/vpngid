@@ -1,0 +1,76 @@
+{
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/best-vpn.html",
+      "destination": "/best-vpn",
+      "permanent": true
+    },
+    {
+      "source": "/coupons.html",
+      "destination": "/coupons",
+      "permanent": true
+    },
+    {
+      "source": "/articles/index.html",
+      "destination": "/articles/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/what-is-vpn.html",
+      "destination": "/articles/what-is-vpn",
+      "permanent": true
+    },
+    {
+      "source": "/articles/how-to-choose-vpn.html",
+      "destination": "/articles/how-to-choose-vpn",
+      "permanent": true
+    },
+    {
+      "source": "/articles/are-free-vpn-safe.html",
+      "destination": "/articles/are-free-vpn-safe",
+      "permanent": true
+    },
+    {
+      "source": "/en/index.html",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/en/best-vpn.html",
+      "destination": "/en/best-vpn",
+      "permanent": true
+    },
+    {
+      "source": "/en/coupons.html",
+      "destination": "/en/coupons",
+      "permanent": true
+    },
+    {
+      "source": "/en/articles/index.html",
+      "destination": "/en/articles/",
+      "permanent": true
+    },
+    {
+      "source": "/en/articles/what-is-vpn.html",
+      "destination": "/en/articles/what-is-vpn",
+      "permanent": true
+    },
+    {
+      "source": "/en/articles/how-to-choose-vpn.html",
+      "destination": "/en/articles/how-to-choose-vpn",
+      "permanent": true
+    },
+    {
+      "source": "/en/articles/are-free-vpn-safe.html",
+      "destination": "/en/articles/are-free-vpn-safe",
+      "permanent": true
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
+}
