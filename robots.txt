@@ -1,25 +1,10 @@
-# robots.txt для VPN GID - многоязычная SEO оптимизация  
-# Версия: 4.2 | Дата: 2025-09-29
+# robots.txt для VPN GID
+# Версия: 5.0 | Дата: 2025-10-12
 # Поддержка: Русский (/) и Английский (/en/)
-# Исправлено: добавлено явное разрешение .html для корректной работы редиректов
 
 # === ОСНОВНЫЕ ПРАВИЛА ДЛЯ ВСЕХ БОТОВ ===
 User-agent: *
 Allow: /
-Allow: /en/
-Allow: /*.css  
-Allow: /*.js
-Allow: /*.json
-Allow: /*.html
-Allow: /img/
-Allow: /articles/
-Allow: /en/articles/
-Allow: /schema/
-Allow: /schema/index.json
-Allow: /schema/locales/
-Allow: /schema/templates/
-Allow: /js/schema-loader.js
-Allow: /sitemap.xml
 
 # === ЗАПРЕЩЕННЫЕ ДИРЕКТОРИИ ===
 Disallow: /admin/
@@ -32,7 +17,7 @@ Disallow: /.env.local
 Disallow: /.env.production
 
 # === БЛОКИРОВКА ДУБЛИРОВАННОГО КОНТЕНТА ===
-# Блокируем только трекинговые параметры в query string (?)
+# Блокируем только трекинговые параметры
 Disallow: /*?*utm_*
 Disallow: /*?*ref=*
 Disallow: /*?*source=*
@@ -55,7 +40,6 @@ User-agent: Bingbot
 Crawl-delay: 1
 
 # === БЛОКИРОВКА ВРЕДОНОСНЫХ БОТОВ ===
-# Оставляем полезные боты для SEO анализа
 User-agent: MJ12bot
 Disallow: /
 
@@ -75,40 +59,7 @@ User-agent: AhrefsBot
 Crawl-delay: 5
 
 # === НАСТРОЙКИ ДЛЯ YANDEX ===
-# Host директива удалена для современной SEO практики
 Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&utm_id&fbclid&gclid&msclkid&ref&source&sessionid&PHPSESSID&_ga&_gid&_gac&_gtag
-
-# === ДОПОЛНИТЕЛЬНЫЕ НАСТРОЙКИ ДЛЯ SEO ===
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: LinkedInBot
-Allow: /
-
-User-agent: WhatsApp
-Allow: /
-
-User-agent: Slackbot-LinkExpanding
-Allow: /
 
 # === КАРТА САЙТА ===
 Sitemap: https://vpngid.com/sitemap.xml
-
-# === ДОПОЛНИТЕЛЬНЫЕ РАЗРЕШЕНИЯ ДЛЯ GOOGLE ===
-User-agent: Google-Extended
-Allow: /
-
-User-agent: Google-InspectionTool
-Allow: /
-
-User-agent: GoogleOther
-Allow: /
-
-# === ДОПОЛНИТЕЛЬНЫЕ ДИРЕКТИВЫ ДЛЯ SEO ===
-# Разрешаем индексацию важных ресурсов
-Allow: /robots.txt
-Allow: /favicon.ico
-Allow: /.well-known/
