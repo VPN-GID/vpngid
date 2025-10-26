@@ -1,43 +1,44 @@
 # robots.txt для VPN GID
-# Версия: 5.0 | Дата: 2025-10-12
+# Версия: 6.0 | Дата: 2025-10-25
 # Поддержка: Русский (/) и Английский (/en/)
+# Оптимизация для Google Search Console
 
 # === ОСНОВНЫЕ ПРАВИЛА ДЛЯ ВСЕХ БОТОВ ===
 User-agent: *
 Allow: /
 
-# === ЗАПРЕЩЕННЫЕ ДИРЕКТОРИИ ===
-Disallow: /admin/
-Disallow: /private/
-Disallow: /temp/
-Disallow: /.git/
-Disallow: /node_modules/
-Disallow: /.env
-Disallow: /.env.local
-Disallow: /.env.production
+# === ЯВНОЕ РАЗРЕШЕНИЕ ВАЖНЫХ ФАЙЛОВ ===
+Allow: /sitemap.xml
+Allow: /robots.txt
+Allow: /*.css
+Allow: /*.js
+Allow: /img/
 
-# === БЛОКИРОВКА ДУБЛИРОВАННОГО КОНТЕНТА ===
-# Блокируем только трекинговые параметры
-Disallow: /*?*utm_*
-Disallow: /*?*ref=*
-Disallow: /*?*source=*
-Disallow: /*?*campaign=*
-Disallow: /*?*sessionid*
-Disallow: /*?*PHPSESSID*
-Disallow: /*?*fbclid*
-Disallow: /*?*gclid*
-Disallow: /*?*_ga*
-Disallow: /*?*_gid*
+# === БЛОКИРОВКА ТРЕКИНГОВЫХ ПАРАМЕТРОВ ===
+# Блокируем только URL с трекинговыми параметрами для предотвращения дублирования
+Disallow: /*?*utm_
+Disallow: /*?*ref=
+Disallow: /*?*source=
+Disallow: /*?*campaign=
+Disallow: /*?*sessionid
+Disallow: /*?*PHPSESSID
+Disallow: /*?*fbclid
+Disallow: /*?*gclid
+Disallow: /*?*_ga
+Disallow: /*?*_gid
 
 # === НАСТРОЙКА СКОРОСТИ СКАНИРОВАНИЯ ===
 User-agent: Googlebot
 Crawl-delay: 0
+Allow: /
 
 User-agent: Yandex
 Crawl-delay: 1
+Allow: /
 
 User-agent: Bingbot
 Crawl-delay: 1
+Allow: /
 
 # === БЛОКИРОВКА ВРЕДОНОСНЫХ БОТОВ ===
 User-agent: MJ12bot
