@@ -138,18 +138,23 @@
         
         .error-btn-primary {
             background: var(--accent-primary);
-            color: white;
+            color: #FFFFFF;
         }
         
         .error-btn-primary:hover {
             background: var(--accent-hover);
-            color: white;
+            color: #FFFFFF;
             transform: translateY(-2px);
         }
         
-        /* Dark theme fix */
-        [data-theme="dark"] .error-btn-primary,
+        /* Dark theme fix - ensure visibility */
+        [data-theme="dark"] .error-btn-primary {
+            background: var(--accent-primary);
+            color: #FFFFFF !important;
+        }
+        
         [data-theme="dark"] .error-btn-primary:hover {
+            background: var(--accent-hover);
             color: #FFFFFF !important;
         }
         
