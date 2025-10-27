@@ -299,7 +299,7 @@ let newPath;
 if (lang === 'en') {
 newPath = '/en' + basePath;
 if (basePath === '/') {
-newPath = '/en/';
+newPath = '/en';
 }
 } else {
 newPath = basePath;

@@ -1,6 +1,17 @@
 {
   "redirects": [
     {
+      "source": "/:path((?!.*\\.).*)/",
+      "destination": "/:path",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.vpngid.com" }],
+      "destination": "https://vpngid.com/:path*",
+      "permanent": true
+    },
+    {
       "source": "/index.html",
       "destination": "/",
       "permanent": true
@@ -17,7 +28,7 @@
     },
     {
       "source": "/articles/index.html",
-      "destination": "/articles/",
+      "destination": "/articles",
       "permanent": true
     },
     {
@@ -37,7 +48,7 @@
     },
     {
       "source": "/en/index.html",
-      "destination": "/en/",
+      "destination": "/en",
       "permanent": true
     },
     {
@@ -52,7 +63,7 @@
     },
     {
       "source": "/en/articles/index.html",
-      "destination": "/en/articles/",
+      "destination": "/en/articles",
       "permanent": true
     },
     {
